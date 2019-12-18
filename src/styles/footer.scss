@@ -1,0 +1,270 @@
+.footer {
+	width: 100%;
+	padding-top: 18.28em;
+
+	&__block-1 {
+	  font-family: Fira Sans;
+    font-style: normal;
+    width: 81.62%;
+    padding: 0 9.19%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+	}
+
+	&__text {
+	  width: 48.64%;
+    /*display: -webkit-flex;
+    display: flex;
+    flex-direction: column;*/
+    padding-bottom: 7.73em;
+	}
+
+	&__h3 {
+	  font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.71em;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: $black;
+    opacity: 0.7;
+	}
+
+	&__h2 {
+	  font-weight: 600;
+    font-size: 2.85rem;
+    letter-spacing: -1px;
+    padding-top: 1.825em;
+    height: 6.72em;
+	}
+
+  &__signature {
+    font-weight: 500;
+    font-size: 1.57rem;
+    color: $black;
+    padding-top: 4em;
+  }
+
+  &__switches {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  &__switch {
+    margin-top: 6.28em;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: $light-gray;
+    position: relative;
+
+    &:after {
+      border: solid $white;
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-width: 0 2px 2px 0;
+      top: 20px;
+      left: 17px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &_left {
+      margin-right: 1.78em;
+
+      &:after {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+  }
+
+	&__img {
+	  width: 40.09%;
+	  height: 620px;
+	  object-fit: cover;
+	}
+
+  &__block-2 {
+    background-color: $dark-gray;
+    font-family: Fira Sans;
+    font-style: normal;
+    width: 81.62%;
+    padding: 0 9.19%;
+  }
+
+  &__container-flex {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.85em;
+    padding-bottom: 2.68em;
+  }
+
+  &__menu {
+    width: 42.43%;
+  }
+
+  &__ul {
+    list-style-type: none;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    &_social-networks {
+      padding-left: 89.73%;
+      padding-bottom: 2.76em;
+      width: 10.27%;
+      justify-content: space-between;
+    }
+  }
+
+  &__li {
+    padding: 0 0.28em;
+
+    &_label {
+      flex-grow: 1;
+      padding: 0;
+    }
+
+    &_social {
+      color: $light-gray;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.57rem;
+    line-height: 32px;
+    color: $white;
+  }
+
+  &__feedback {
+    width: 28.1%;
+  }
+
+  &__form {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    font-weight: normal;
+    font-size: 1.28rem;
+    color: $pale-blue;
+    max-width: 170px;
+    width: 47%;
+    outline: none;
+    padding-left: 1.11em;
+  }
+
+  &__button {
+    width: 40.7%;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 171%;
+    height: 2.64em;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-style: none;
+    color: $white;
+    background: $black;
+  }
+
+  &__line {
+    margin-top: 2.68em;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    border: 1px solid $white;
+    box-sizing: border-box;
+    margin-bottom: 2.7em;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .footer {
+
+    &__feedback {
+      width: 33%;
+    }
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .footer {
+
+    &__button {
+      font-size: 0.75rem;
+    }
+    
+    &__menu {
+      width: 55%;
+    }
+  }
+}
+
+ @media only screen and (max-width: 950px) {
+  .footer {
+
+    &__container-flex {
+      flex-direction: column;
+    }
+
+    &__ul {
+      justify-content: space-between;
+    }
+
+    &__li_label {
+      flex-grow: 0;
+    }
+
+    &__menu {
+      width: 100%;
+    }
+
+    &__feedback {
+      width: 100%;
+    }
+
+    &__button {
+      width: 20%;
+    }
+  }
+}
+
+@media only screen and (max-width: 905px) {
+  .footer {
+    
+    &__h2 {
+      height: auto;
+    }
+
+    &__signature {
+      padding-top: 1em;
+    }
+
+    &__switch {
+      margin-top: 1em;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .footer {
+
+    &__button {
+      font-size: 0.5rem;
+    }
+  }
+}

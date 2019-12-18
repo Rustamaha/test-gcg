@@ -1,0 +1,244 @@
+.header {
+  width: 90.81%;
+  padding-left: 9.19%;
+  
+  &__menu {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    color: $black;
+    height: 142px;
+  }
+
+  &__content {
+    display: flex;
+    display: -webkit-flex;
+  }
+
+  &__img {
+    width: 53.84%;
+    height: 840px;
+    object-fit: cover;  
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $black;
+  }
+
+  &__cell_toggle-menu {
+    position: relative;
+    width: 34px;
+    height: 3px;
+    border-top: 3px solid $black;
+    position: relative;
+    margin-right: 8.92rem;
+    cursor: pointer;
+
+    &:after {
+      top: 8px;
+      right: 0;
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 3px;
+      border-top: 3px solid $black;
+    }
+  }
+
+  &__label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.42rem;
+  }
+
+  &__text {
+    width: 46.16%;
+    height: 700px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &__h1 {
+    width: 83.15%;
+    font-weight: bold;
+    font-size: 4.28rem;
+    letter-spacing: -1px;
+    color: $black;
+    margin-top: 1.11em;
+  }
+
+  &__paragraph {
+    margin-top: 1.66em;
+    width: 83.15%;
+    height: 81px;
+    font-size: 1.28rem;
+    color: $black;
+    opacity: 0.7;
+  }
+
+  &__button {
+    margin-top: 4em;
+    width: 54.03%;
+    max-height: 50px;
+    padding: 1.21em 0;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $black;
+    border-style: none;
+  }
+
+  &__carousel {
+    width: 60.7%;
+    margin-top: 10.5em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.28rem;
+    font-size: 1.28rem;
+    color: $black;
+    justify-content: space-between;
+  }
+
+  &__line {
+    width: 80.34%;
+    height: 2px;
+    background-color: $slightly-orange;
+    background-image: linear-gradient(180deg, $slightly-orange 0%, $grayish-red 100%);
+  }
+
+  &__video-player {
+    position: relative;
+  }
+  &__video {
+    position: relative;
+    bottom: 266px;
+    left: 78.07%;
+    width: 70.17%;
+    height: 310px;
+    object-fit: cover;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .header {
+
+    &__h1 {
+      font-size: 3rem;
+    }
+
+    &__button {
+      font-size: 0.75rem;
+    }
+
+    &__img {
+      height: 700px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    
+    &__label {
+      font-size: 3rem;
+    }
+
+    &__cell_toggle-menu {
+      margin-right: 5em;
+    }
+
+    &__button {
+      font-size: 0.5rem;
+    }
+
+    &__h1 {
+      font-size: 2.5rem;
+    }
+
+    &__img {
+      height: 600px;
+    }
+
+    &__carousel {
+      font-size: 0.75rem;
+    }
+
+    &__video {
+      height: 200px;
+      bottom: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+
+    &__label {
+      font-size: 2rem;
+    }
+
+    &__h1 {
+      font-size: 2rem;
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header {
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__button,
+    &__h1 {
+      margin: 0;
+    }
+
+    &__paragraph {
+      height: auto;
+    }
+
+    &__carousel {
+      margin-top: 2em;
+    }
+
+    &__text,
+    &__img {
+      width: 100%;
+    }
+
+    &__text {
+      height: 430px;
+    }
+
+    &__img {
+      height: auto;
+    }
+
+    &__video {
+      position: static;
+    }
+  }
+}
+
+  

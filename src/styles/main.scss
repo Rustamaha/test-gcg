@@ -1,0 +1,35 @@
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Firasansregular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Firasansregular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+$grey: #F4F4F4;
+$black: #151515;
+$white: #FFFFFF;
+$purple: #8C0BFF;
+$slightly-orange: #C6B393;
+$grayish-red: #d7d4d4;
+$light-gray: #c4c4c4;
+$dark-gray: #494949;
+$pale-blue: #f5f4ff;
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: $grey;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.container {
+  display: block;
+  max-width: 1360px;
+  margin: 0 auto;
+}
