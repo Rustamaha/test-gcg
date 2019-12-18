@@ -173,7 +173,6 @@
     font-weight: 500;
     font-size: 1rem;
     line-height: 171%;
-    height: 2.64em;
     text-align: center;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -265,6 +264,56 @@
 
     &__button {
       font-size: 0.5rem;
+      width: 30%;
+    }
+
+    &__h2 {
+      font-size: 2rem;
+    }
+
+    &__ul {
+
+      &_social-networks {
+        padding-left: 83%;
+        width: 17%;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  .footer {
+    padding-top: 3em;
+
+    &__block-1 {
+      flex-direction: column;
+    }
+
+    &__text {
+      width: 70%;
+      padding-bottom: 1em;
+    }
+
+    &__h2 {
+      padding-top: 1em;
+    }
+
+    &__button {
+      width: 35%;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__ul {
+      flex-wrap: wrap;
+
+      &_social-networks {
+        padding-left: 78%;
+        width: 22%;
+      }
     }
   }
 }
